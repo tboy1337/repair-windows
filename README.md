@@ -44,7 +44,7 @@ This repository provides a collection of batch scripts to repair and optimize Wi
 ## Usage
 
 1. Download or clone this repository to your local machine.
-2. Run the desired script by double-clicking the `.cmd` file or running it from the Command Prompt as an administrator.
+2. Run the desired `.cmd` by right-clicking and selecting "Run as administrator".
 
 **Note:** Some scripts require administrator privileges to execute successfully. If prompted, grant permission to proceed.
 
