@@ -21,7 +21,7 @@ This repository provides a collection of batch scripts to repair and optimize Wi
    - Runs the Deployment Imaging Service and Management Tool (DISM) and System File Checker (SFC) to scan and repair corrupted system files.
 
 ### 2. `Defrag_and_Optimise.cmd`
-   - Defragments and optimizes all system drives, helping improve system performance on traditional HDDs.
+   - Defragments and optimizes all system drives, helping improve system performance on traditional HDDs and SSDs.
 
 ### 3. `Free_Space.cmd` & `Free_Space_2.cmd`
    - Clears unnecessary temporary files and frees up disk space to improve performance.
@@ -36,7 +36,7 @@ This repository provides a collection of batch scripts to repair and optimize Wi
    - Resets the Winsock catalog to resolve network connectivity issues.
 
 ### 7. `bootrec.cmd`
-   - Utilizes the `bootrec` tool to fix boot sector issues, which can help resolve problems with booting Windows.
+   - Utilizes the `bootrec` tool to fix boot sector issues, which can help resolve problems with booting Windows (need to be in WindowsRE to use this).
 
 ### 8. `chkdsk_Scan_FAT.cmd` & `chkdsk_Scan_NTFS.cmd`
    - Runs the CHKDSK utility for FAT and NTFS drives, respectively, to check and repair file system errors.
