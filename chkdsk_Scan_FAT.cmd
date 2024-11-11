@@ -21,7 +21,7 @@ if %errorlevel% neq 0 (
     echo y | call chkdsk "%SystemDrive%" /R /X >nul 2>&1
     echo Restarting system to complete repairs.
     timeout /t 30 /nobreak
-    call shutdown /r /t 2 >nul 2>&1
+    call shutdown /r /t 0 >nul 2>&1
     exit /b 1
 )
 
