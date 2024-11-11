@@ -20,6 +20,7 @@ if %errorlevel% neq 0 (
     echo Issues found with %SystemDrive% file system.
     echo y | call chkdsk "%SystemDrive%" /F /X /B /scan /perf >nul 2>&1
     echo Restarting system to complete repairs.
+    echo Run chkdsk "%SystemDrive%" /sdcleanup after repair finishes.
     timeout /t 30 /nobreak
     call shutdown /r /f /t 0 >nul 2>&1
     exit /b 1
