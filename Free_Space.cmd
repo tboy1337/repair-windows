@@ -22,7 +22,7 @@ if %errorlevel% neq 0 (
 
 call cleanmgr /d "%SystemDrive%" /autoclean >nul 2>&1
 if %errorlevel% neq 0 (
-    echo Failed to free up space on %SystemDrive% drive again.
+    echo Failed to delete old Windows update files on %SystemDrive% drive.
 )
 
 timeout /t 5 /nobreak
