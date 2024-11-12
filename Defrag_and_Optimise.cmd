@@ -38,7 +38,7 @@ if %errorlevel% neq 0 (
     echo Failed to perform slab consolidation on all drives.
 )
 
-echo Optimizing all drives...
+echo Optimizing all drives (might take a long time)...
 call defrag /C /O /H >nul 2>&1
 if %errorlevel% neq 0 (
     echo Failed to optimize all drives.
