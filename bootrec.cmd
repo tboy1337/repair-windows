@@ -32,7 +32,8 @@ if %errorlevel% neq 0 (
     echo Failed to rebuild BCD.
     echo Trying again.
     call bcdedit /export "%SystemDrive%\BCDBackup" >nul 2>&1
-    call cd /d "%SystemDrive%\boot" >nul 2>&1
+    call cd /d "%SystemDrive%" >nul 2>&1
+    call cd boot
     call attrib bcd -s -h -r >nul 2>&1
     call ren "%SystemDrive%\boot\bcd" "bcd.old" >nul 2>&1
     call bootrec /rebuildbcd >nul 2>&1
